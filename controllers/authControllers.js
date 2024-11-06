@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const { createAccessToken } = require("../utils/token");
 const { validateEmail } = require("../utils/validation");
 
-
+// signup controller 
 exports.signup = async (req, res) => {
   try {
     const { name, email, password } = req.body;
