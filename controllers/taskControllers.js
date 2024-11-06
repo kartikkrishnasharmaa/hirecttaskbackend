@@ -1,7 +1,7 @@
 const Task = require( "../models/Task" );
 const { validateObjectId } = require( "../utils/validation" );
 
-
+// get task controller
 exports.getTasks = async ( req, res ) => {
   try {
     const tasks = await Task.find( { user: req.user.id } );
